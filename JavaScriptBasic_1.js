@@ -56,3 +56,20 @@ console.log(`Today is: ${todayName}`);
 console.log(`Current time is: ${hourAMPM} : ${minute} : ${second}`);
 
 
+// 3. Write a JavaScript program to get the current date.
+// Expected Output :
+// mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+
+let mounth = now.getMonth();
+let year = now.getUTCFullYear();
+let date = now.getUTCDate();
+
+// console.log(mounth, year, date);
+
+//Result
+console.log(`Expected Output: ${(mounth < 10 ? '0' + mounth : mounth)}-${date < 10 ? '0' + date : date}-${year} ******* mm-dd-yyyy, mm/dd/yyyy `);
+
+
+
+
+
